@@ -1,4 +1,53 @@
 {% extends 'base.html' %}
 {% block body %}
-  <p>hello world</p>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .ai-tool {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My AI Tools Showcase</h1>
+    </header>
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm [Your Name], and this is my AI tools showcase. I'm passionate about artificial intelligence and its applications. Explore the AI tools I've highlighted below.</p>
+
+        <div class="ai-tool">
+            <h2>AI Tool 1: ChatBot Genius</h2>
+            <p>Introducing ChatBot Genius - a cutting-edge chatbot powered by natural language processing. It can engage in conversations, answer questions, and assist users in real-time.</p>
+            <p><a href="https://www.example.com/chatbot-genius" target="_blank">Learn More</a></p>
+        </div>
+
+        <div class="ai-tool">
+            <h2>AI Tool 2: Visionary Image Recognition</h2>
+            <p>Experience Visionary Image Recognition - an AI tool that can analyze images and identify objects, scenes, and even emotions portrayed in the pictures.</p>
+            <p><a href="https://www.example.com/visionary-image-recognition" target="_blank">Learn More</a></p>
+        </div>
+    </div>
+
 {% endblock body %}
