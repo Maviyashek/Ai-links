@@ -13,7 +13,11 @@ class User(db.Model):
     def __repr__(self):
         return f'<User {self.username}>'
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/")
+def index():
+    return render_template('index.html') 
+
+@app.route("/login.html", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
         username = request.form.get("username")
